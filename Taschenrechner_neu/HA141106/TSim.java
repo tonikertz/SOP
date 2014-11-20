@@ -18,6 +18,7 @@ public class TSim {
 		Taste t1 = new Taste();
 		t1.setZeichen('1');
 		t1.setTaschenrechner(t);
+		
 
 		Taste t2 = new Taste();
 		t2.setZeichen('2');
@@ -78,34 +79,34 @@ public class TSim {
 		Taste tpunkt = new Taste();
 		tpunkt.setZeichen(',');
 		tpunkt.setTaschenrechner(t);
-		// --------------------------------simulation----------------------------
-
+//		// --------------------------------simulation----------------------------
+//
 		t1.druecken();
 		t0.druecken();
 		t3.druecken();	
 		tpunkt.druecken();
 		t4.druecken();
-		
-		tplus.druecken();
+//		
+//		tplus.druecken();
 		t8.druecken();
 		t3.druecken();
 		tpunkt.druecken();
 		t2.druecken();
-		t4.druecken();
-		tgleich.druecken();		
+//		t4.druecken();
+//		tgleich.druecken();		
 		tmal.druecken();
 		t3.druecken();
 		tgleich.druecken();
-		t2.druecken();
-		tpunkt.druecken();
-		t1.druecken();
-		tminus.druecken();
-		t8.druecken();
-		tgleich.druecken();
-		tdiv.druecken();
-		t8.druecken();
-		tgleich.druecken();
-		tc.druecken();
+//		t2.druecken();
+//		tpunkt.druecken();
+//		t1.druecken();
+//		tminus.druecken();
+//		t8.druecken();
+//		tgleich.druecken();
+//		tdiv.druecken();
+//		t8.druecken();
+//		tgleich.druecken();
+//		tc.druecken();
 		
 		}
 

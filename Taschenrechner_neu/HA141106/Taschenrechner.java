@@ -9,6 +9,7 @@ public class Taschenrechner {
 	private char operation;
 	private char zustand = '1';
 	private double erg;
+	String s = null;
 
 	public void verarbeite(char zeichen) {
 		switch (zustand) {
@@ -16,7 +17,7 @@ public class Taschenrechner {
 			switch (zeichen) {
 			case 'c':
 				if (zahl1 != 0)
-					display.ausgabe(zahl1);
+				display.ausgabe(zahl1);
 				zahl1 = 0;
 				zahl2 = 0;
 				erg = 0;
@@ -35,8 +36,14 @@ public class Taschenrechner {
 			case '8':
 			case '9':
 				zahl1 = (zahl1 * 10) + zeichen - '0';
-				display.ausgabe(zeichen - '0');
-				break;
+				//display.ausgabe(zeichen - '0');
+//------------------------------------------------------------------------				
+				s = String.valueOf(zahl1);	
+				display.strAnzeigen(s);		
+				break;				
+//------------------------------------------------------------------------			
+			
+			
 			case ',':
 				zustand = '4'; // nachkommastelle zahl1!!
 				display.ausgabe('.');
@@ -65,9 +72,11 @@ public class Taschenrechner {
 			case '=':
 				System.out.print(" = ");
 				display.ausgabe(zahl1);
-
+				
 				zustand = '3';
+				
 			}
+			
 			break;
 		case '2': // eingabe 2.zahl wenn operation + - * / gedrückt wurde
 			switch (zeichen) {
@@ -286,13 +295,14 @@ public class Taschenrechner {
 				System.out.print(" = ");
 
 				display.ausgabe(erg);
+				
 				zustand = '3';
 				break;
-
+				
 			}
-
+			
 			break;
-
+			
 		}
 
 	}

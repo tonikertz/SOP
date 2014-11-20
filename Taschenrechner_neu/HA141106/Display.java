@@ -34,8 +34,10 @@ public class Display {
 										// ausgegeben
 			} else
 				System.out.print((int) zahl); // siehe if wird als int also ohne
-												// .0 ausgegeben
-		}}
+											  // .0 ausgegeben
+		}
+		
+	}
 		String[] eins={	"        ",
 					"        ",
 					"   /\\   ",
@@ -220,12 +222,14 @@ public class Display {
 					switch (str.charAt(j)){
 					case '1':
 						System.out.print(eins[i]);
+						
 						break;
 					case '2':
 						System.out.print(zwei[i]);
 						break;
 					case '3':
 						System.out.print(drei[i]);
+						
 						break;
 					case '4':
 						System.out.print(vier[i]);
@@ -247,6 +251,7 @@ public class Display {
 						break;
 					case '0':
 						System.out.print(zero[i]);
+						
 						break;
 					case '.':
 					case ',':
@@ -267,11 +272,16 @@ public class Display {
 					case '=':
 						System.out.print(gleich[i]);
 						break;
+						
 					}
+					
+				}System.out.println();
+				
+				
 				}
-				System.out.println();
+			
 			}
-		}
+		
 
 		
 	}
